@@ -1,0 +1,147 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title> Employee Application Form</title>
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link href="https://fonts.googleapis.com/css2?family=Fugaz+One&family=Itim&family=Roboto:wght@300&family=Sofadi+One&family=Sofia&family=Yellowtail&display=swap" rel="stylesheet">
+    </head>
+<style>
+       h2 {
+        font-family: 'Sofia', cursive;
+        color: rgb(241, 8, 8);
+        margin:0px 100px 0px 100px;
+        padding-bottom: 20px;
+        /* text-align: center; */
+       }
+       #emp {
+        font-family: 'Sofadi One', cursive;
+        color: rgb(236, 12, 135);
+       }
+       label {
+        font-family: 'Fugaz One', cursive;
+       }
+       input[type="text"]  {
+        color: red ;
+        font-family: 'Itim', cursive;
+       }
+       input[type="email"],
+       input[type="number"],
+       textarea[rows="7"]
+       {
+        color: red;
+        font-family: 'Itim',cursive;
+       }
+       button {
+        background-color: aqua;
+        margin-left: 50px;
+        color: crimson;
+        border-radius: 10px;
+        font-family: 'Fugaz One', cursive;
+       }
+       .box {
+        color: yellowgreen;
+       }
+       .abc {
+        border-radius: 10px;
+        background-color: bisque;
+        width: 200px;
+       }
+       fieldset {
+        background-color:aliceblue;
+        padding: 30px;
+        width: fit-content;
+       }
+       table {
+        margin:0px 100px 0px 100px;
+       }
+       
+ </style>
+    </head>
+    <body>
+        
+        <fieldset>
+            <legend> <span id="emp"> Employee Application Form</span></legend>
+        <form>
+            <table>
+                <h2> Employee Application Form</h2>
+                <tbody>
+                    <tr>
+                        <td><label> Full Name </label></td>
+                        <td > <input type="text" autofocus required maxlength="40" placeholder="Enter Full Name " class="abc"> </td>
+                    </tr>
+                    <tr>
+                        <td> <label> Email Address</label></td>
+                        <td > <input type="email" required placeholder="abc@gmail.com" class="abc"> </td>
+                    </tr>
+                    <tr>
+                        <td> <label> Password</label></td>
+                        <td > <input type="password" required class="abc"> </td>
+                    </tr>
+                    <tr>
+                        <td> <label> Contact Number </label></td>
+                        <td > <input type="number" required class="abc"> </td>
+                    </tr>
+                    <tr>
+                        <td> <label> Profile Photo </label></td>
+                        <td > <input type="file"> </td>
+                    </tr>
+                    <tr>
+                        <td> <label> Date Of Birth </label></td>
+                        <td > <input type="date" required class="abc"> </td>
+                    </tr>
+                    <tr >
+                        <td> <label> Gender</label></td>
+                        <td class="box"> <input type="radio" name="gender"> <label> Male </label> 
+                        <input type="radio" name="gender"> <label> Female </label> 
+                        <input type="radio" name="gender"> <label> Others </label> </td>
+                    </tr>
+                    <tr>
+                        <td> <label> Marital Status </label></td>
+                        <td class="box">
+                            <input type="radio" name="marital status" > <label> Yes </label>
+                            <input type="radio" name="marital status" > <label> No </label>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td> <label> Tools & Technology </label></td>
+                        <td class="box">
+                            <input type="checkbox" > <label> Angular </label>
+                            <input type="checkbox" > <label> React </label>
+                            <input type="checkbox" > <label> Python </label>
+                            <input type="checkbox" > <label> Java </label>
+                            <input type="checkbox" > <label> Jenkin </label>
+                            <input type="checkbox" > <label> Git </label>
+                            <input type="checkbox" > <label> Datebase </label>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td> <label > Profile </label></td>
+                        <td>
+                            <select>
+                                <option> UI Developer </option>
+                                <option> Backend Developer </option>
+                                <option> Full stack Developer </option>
+                                <option> DevOps Engineer </option>
+                                <option> Tester </option>
+                            </select>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td> <label> Country </label></td>
+                        <td> <input type="text" value="India" readonly class="abc"> </td>
+                    </tr>
+                    <tr>
+                        <td> <label> Present Address </label></td>
+                        <td> <textarea rows="7" class="abc"> </textarea>  </td>
+                    </tr>
+                    <tr>
+                        <td> <button type="submit"> Submit </button></td>
+                        <td> <button type="reset"> Reset </button></td>
+                    </tr>
+                </tbody>
+            </table>
+        </form>
+    </fieldset>
+    </body>
+</html>
